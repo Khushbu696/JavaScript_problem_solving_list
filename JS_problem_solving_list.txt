@@ -1,0 +1,1259 @@
+/*PRINT HELLO WORLD*/
+// function print(){
+//     console.log("Hello World !");
+// }
+// print();
+
+
+/*ADD TWO NUMBERS*/
+// let num1 = 5;
+// let num2 = 5;
+// function add(num1 , num2){
+//     console.log(num1 + num2);
+// }
+// add(num1 , num2);
+
+
+/*FIND THE LARGEST NUMBER*/
+// let num1 = 10;
+// let num2 = 10;
+// let num3 = 50;
+// function largest(num1, num2, num3){
+//     if(num1>num2 & num1>num3){
+//         console.log("largest number is",num1)
+//     }
+//     else if(num2>num3 & num2>num1){
+//         console.log("largest number is",num2)
+//     }
+//     else if(num1==num2 & (num1>num3 | num2>num3)){
+//         console.log(num1, num2, "are equal")
+//     }
+//     else if(num2==num3 & (num2>num1 | num3>num1)){
+//         console.log(num1, num2, "are equal")
+//     }
+//     else if(num1==num3 & (num1>num2 | num3>num2)){
+//         console.log(num1, num2, "are equal")
+//     }
+//     else{
+//         console.log("largest number is", num3)
+//     }
+// }
+// largest(num1, num2, num3);
+
+
+/*CHECK IF A NUMBER IS EVEN OR ODD*/
+// let num = 5;
+// function isEven(num){
+//     if(num%2==0){
+//         console.log(num, "is even");
+//     }
+//     else{
+//         console.log(num, "is odd");
+//     }
+// }
+// isEven(num);
+
+
+/*CALCULATE THE FACTORIAL OF A NUMBER*/
+// const number = 5;
+// let fact = 1;
+// function factorial() {
+//     for (let i = 1; i <= number; i++) {
+//         fact *= i;
+//     }
+//     console.log(fact)
+// }
+// factorial();
+
+
+/*REVERSE A STRING */
+// let str = "hello";
+// let newstr = "";
+// function revname() {
+//     for (let i = str.length - 1; i >= 0; i--) {
+//         newstr = newstr + str[i];
+//     }
+//     console.log(newstr);
+// }
+// revname();
+
+
+/*CHECK IF A STRING IS PALINDROME*/
+// let string = "madam";
+// function checkpal(string) {
+//     const length = string.length;
+//     for (let i = 0; i < length / 2; i++) {
+//         if (string[i] !== string[length-1-i]) {
+//             console.log("false")
+//         }
+//         else {
+//             console.log("true");
+//         }
+//     }
+// }
+// checkpal(string);
+
+
+/*FIND THE MINIMUM NUMBER IN AN ARRAY*/
+// let arr = [1,-2,3,4,5];
+// function findMinimum(arr) {
+//     let min = arr[0];
+//     for (let i = 1; i < arr.length; i++) {
+//         if (arr[i] < min) {
+//             min = arr[i];
+//         }
+//     }
+//     console.log(min);
+// }
+// findMinimum(arr);
+
+
+/*SORT AN ARRAY*/
+// let arr = [1, 3, 5, 2, 4]
+// function sortArray(arr) {
+//     let len = arr.length;
+//     for (let i = 0; i < len - 1; i++) {
+//         for (let j = 0; j < len - 1 - i; j++) {
+//             if (arr[j] > arr[j + 1]) {
+//                 let temp = arr[j];
+//                 arr[j] = arr[j + 1];
+//                 arr[j + 1] = temp;
+//             }
+//         }
+//     }
+//     console.log(arr);
+// }
+// sortArray(arr);
+
+
+/*CHECK IF A STRING CONTAINS A SUBSTRING*/
+// const mainString = "Hello, world!";
+// const subString = "world";
+// function containsSubstring(mainString, subString) {
+//     return mainString.includes(subString);
+// }
+// console.log(containsSubstring(mainString, subString));
+
+
+/*SUM ALL ELEMENTS IN AN ARRAY*/
+// let arr = [1,2,3,4,5]
+// let sum = 0;
+// function add(arr){
+//     for(let i=0; i<arr.length; i++){
+//         sum = sum + arr[i];
+//     }
+// }
+// add(arr);
+// console.log(sum);
+
+
+/*GENERATE FIBONACCI SEQUENCE*/
+// const number = 5;
+// let num1 = 0;
+// let num2 = 1;
+// let temp;
+// function fibonacci(){
+//     for(let i=1; i<number; i++){
+//         console.log(num1);
+//         temp = num1 + num2;
+//         num1 = num2;
+//         num2 = temp;
+//     }
+// }
+// fibonacci();
+// console.log(num1);
+
+
+/*CHECK IF A NUMBER IS PRIME*/
+// let number = 2;
+// let count = 0;
+// function prime() {
+//     for (let i = 2; i < number; i++) {
+//         if (number % i == 0) {
+//             count = count + 1;
+//         }
+//     }
+//     if (count > 0) {
+//         console.log(number, "is not a prime number")
+//     }
+//     else {
+//         console.log(number, "is a prime number")
+//     }
+// }
+// prime();
+
+
+/*COUNT THE NUMBER OF VOWELS IN A STRING*/
+// const vowels = ['a', 'e', 'i', 'o', 'u'];
+// const string = "hello";
+// const result = countVowels(string);
+// function countVowels(str) {
+//     let count = 0;
+//     for (let letter of str.toLowerCase()) {
+//         if (vowels.includes(letter)) {
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+// console.log(result);
+
+
+/*FIND THE INDEX OF AN ELEMENT IN AN ARRAY*/
+// function findIndex(arr, element) {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] === element) {
+//             return i;
+//         }
+//     }
+//     return -1;
+// }
+// console.log(findIndex([1, 2, 3, 4, 5], 3));
+
+
+/*REMOVES DUPLICATES FROM AN ARRAY*/
+// let arr = [1, 2, 3, 2, 4, 4, 5];
+// function removeDuplicates(arr) {
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = i + 1; j < arr.length; j++) {
+//             if (arr[i] === arr[j]) {
+//                 arr.splice(j, 1);
+//                 j--; // Adjust the index after removal
+//             }
+//         }
+//     }
+//     return arr;
+// }
+// console.log(removeDuplicates(arr));
+
+
+/*FIND THE INTERSECTION OF TWO ARRAYS*/
+// let arr1 = [1,2,3]
+// let arr2 = [2,3,4]
+// function findIntersection(arr1, arr2) {
+//     let intersection = [];
+//     for (let i = 0; i < arr1.length; i++) {
+//         for (let j = 0; j < arr2.length; j++) {
+//             if (arr1[i] === arr2[j]) {
+//                 intersection.push(arr1[i]);
+//                 break; // Move to the next element in arr1
+//             }
+//         }
+//     }
+//     return intersection;
+// }
+// console.log(findIntersection(arr1, arr2));
+
+
+/*CHECK IF TWO STRING ARE ANAGRAMS*/
+// const string1 = "silent";
+// const string2 = "listen";
+// let count = 0;
+// function anagrams(string1, string2){
+//     if(string1.length !== string2.length){
+//         console.log("invalid strings")
+//     }
+//     let charCount = {};
+//     for(let i=0; i<string1.length; i++){
+//         let char = string1[i];
+//         charCount[char] = (charCount[char] | 0)+1;
+//     }
+//     for(let i=0; i<string2.length; i++){
+//         let char = string2[i];
+//         if(!charCount[char]){
+//             return false;
+//         }
+//         charCount[char]--;
+//     }
+//     for(let key in charCount){
+//         if(charCount[key]!==0){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+// console.log(anagrams(string1, string2));
+
+
+/*CAPITALIZE THE FIRST LETTER OF EACH WORD*/
+// let str = "hello world";
+// function toCapitalCase(str) {
+//     let result = '';
+//     let capitalizeNext = true;
+//     for (let i = 0; i < str.length; i++) {
+//         let char = str[i];
+//         if (char === ' ') {
+//             capitalizeNext = true;
+//             result += char;
+//         } else if (capitalizeNext) {
+//             result += char.toUpperCase();
+//             capitalizeNext = false;
+//         } else {
+//             result += char.toLowerCase();
+//         }
+//     }
+//     return result;
+// }
+// console.log(toCapitalCase(str));
+
+
+/*FLATTEN A NESTED ARRAY*/
+// function flattenArray(arr) {
+//     return arr.reduce((flat, toFlatten) => {
+//         return flat.concat(Array.isArray(toFlatten) ? flattenArray(toFlatten) : toFlatten);
+//     }, []);
+// }
+
+// // Test
+// console.log(flattenArray([1, [2, 3], [4, [5, 6]]]));
+
+
+/*GENERATE A RANDOM NUMBER WITHIN A RANGE*/
+// function randomNumber(min, max) {
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+// console.log(randomNumber(1, 10));
+
+
+/*CHECK IF A STRING IS A VALID EMAIL*/
+// function isValidEmail(email) {
+//     const atSymbol = email.includes("@");
+//     const dot = email.indexOf(".") > email.indexOf("@");
+//     return atSymbol && dot;
+// }
+// console.log(isValidEmail('test@example.com'));
+// console.log(isValidEmail('invalid-email')); 
+
+
+/*CONVERT CELSIUS TO FARHENHEIT*/
+// let temp = 25;
+// function celsiusToFahrenheit(celsius) {
+//     return (celsius * 9/5) + 32;
+// }
+// console.log(celsiusToFahrenheit(temp));
+
+
+/*REMOVE A SPECIFIC ELEMENT FROM AN ARRAY*/
+// function removeElement(array, element) {
+//     return array.filter(item => item !== element);
+// }
+// console.log(removeElement([1, 2, 3, 4, 5], 3));
+
+
+/*FIND THE SECOND LARGEST NUMBER IN AN ARRAY*/
+// function secondLargest(array) {
+//     let largest = -Infinity;
+//     let secondLargest = -Infinity;
+
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] > largest) {
+//             secondLargest = largest;
+//             largest = array[i];
+//         } else if (array[i] > secondLargest && array[i] < largest) {
+//             secondLargest = array[i];
+//         }
+//     }
+//     return secondLargest;
+// }
+// console.log(secondLargest([1, 2, 3, 4, 5]));
+
+
+/*FIND THE LONGEST WORD IN A STRING*/
+// let str = "The quick brown fox jumped over the lazy dog";
+// function longestWord(str) {
+//     let words = str.split(' ');
+//     let longest = '';
+//     for (let word of words) {
+//         if (word.length > longest.length) {
+//             longest = word;
+//         }
+//     }
+//     return longest;
+// }
+// console.log(longestWord(str));
+
+
+/*FIND THE MISSING NUMBER IN AN ARRAY*/
+// let arr = [1,2,4,5,6]
+// function findMissingNumber(arr) {
+//     const n = arr.length + 1;
+//     const totalSum = (n * (n + 1)) / 2;
+//     const arraySum = arr.reduce((acc, num) => acc + num, 0);
+//     return totalSum - arraySum;
+// }
+// console.log(findMissingNumber(arr));
+
+
+/*CALCULATE THE GCD OF TWO NUMBERS*/
+// let a = 12;
+// let b = 18;
+// function gcd(a, b) {
+//     if (b === 0) {
+//         return a;
+//     }
+//     return gcd(b, a % b);
+// }
+// console.log(gcd(a, b));
+
+
+/*CALCULATE THE LCM OF TWO NUMBERS*/
+// let a = 4;
+// let b = 6;
+// function gcd(a, b) {
+//     if (b === 0) {
+//         return a;
+//     }
+//     return gcd(b, a % b);
+// }
+// function lcm(a, b) {
+//     return (a * b) / gcd(a, b);
+// }
+// console.log(lcm(a, b));
+
+
+/*CHECK FOR BALANCED PARENTHESES*/
+// function isBalanced(str) {
+//     const stack = [];
+//     for (let char of str) {
+//         if (char === '(') {
+//             stack.push(char);
+//         } else if (char === ')') {
+//             if (stack.length === 0) {
+//                 return false;
+//             }
+//             stack.pop();
+//         }
+//     }
+//     return stack.length === 0;
+// }
+// console.log(isBalanced('()'));
+
+
+/*ROTATE AN ARRAY*/
+// function rotateArray(arr, k) {
+//     const n = arr.length;
+//     k = k % n;
+//     return arr.slice(-k).concat(arr.slice(0, n - k));
+// }
+// console.log(rotateArray([1, 2, 3, 4, 5], 2));
+
+
+
+
+
+/*#######################################################################################################################################*/
+
+
+
+
+
+/*REVERSE A STRING */
+// let str = "hello";
+// let newstr = "";
+// function revname() {
+//     for (let i = str.length - 1; i >= 0; i--) {
+//         newstr = newstr + str[i];
+//     }
+//     console.log(newstr);
+// }
+// revname();
+
+
+/*CHECK IF A STRING IS PALINDROME*/
+// let string = "madam";
+// function checkpal(string) {
+//     const length = string.length;
+//     for (let i = 0; i < length / 2; i++) {
+//         if (string[i] !== string[length-1-i]) {
+//             console.log("false")
+//         }
+//         else {
+//             console.log("true");
+//         }
+//     }
+// }
+// checkpal(string);
+
+
+/*count the numbers of vowels in a string */
+// const vowels = ['a', 'e', 'i', 'o', 'u'];
+// const string = "hello";
+// const result = countVowels(string);
+// function countVowels(str) {
+//     let count = 0;
+//     for (let letter of str.toLowerCase()) {
+//         if (vowels.includes(letter)) {
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+// console.log(result);
+
+
+/*Find the First Non-Repeated Character in a String*/
+// let str = "swiss";
+// function firstNonRepeatedCharacter(str) {
+//     const charCount = {};
+//     for (let char of str) {
+//         charCount[char] = (charCount[char] || 0) + 1;
+//     }
+//     for (let char of str) {
+//         if (charCount[char] === 1) {
+//             return char;
+//         }
+//     }
+//     return null;
+// }
+// console.log(firstNonRepeatedCharacter(str));
+
+
+/*COUNT THE NUMBER OF WORDS IN A STRING*/
+// const string = "this is a test string";
+// let wordcount = countwords(string);
+// function countwords(string){
+//     let count = 0;
+//     let num = false;
+//     for(let i=0; i<string.length; i++){
+//         if(string[i]!==" " & !num){
+//             count++;
+//             num = true;
+//         }
+//         else if(string[i]===' '){
+//             num = false;
+//         }
+//     }
+//     return count;
+// }
+// console.log("the number of words in the string are", wordcount);
+
+
+/*CHECK IF TWO STRINGS ARE ANAGRAMS*/
+// const string1 = "silent";
+// const string2 = "listen";
+// let count = 0;
+// function anagrams(string1, string2){
+//     if(string1.length !== string2.length){
+//         console.log("invalid strings")
+//     }
+//     let charCount = {};
+//     for(let i=0; i<string1.length; i++){
+//         let char = string1[i];
+//         charCount[char] = (charCount[char] | 0)+1;
+//     }
+//     for(let i=0; i<string2.length; i++){
+//         let char = string2[i];
+//         if(!charCount[char]){
+//             return false;
+//         }
+//         charCount[char]--;
+//     }
+//     for(let key in charCount){
+//         if(charCount[key]!==0){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+// console.log(anagrams(string1, string2));
+
+
+/*REPLACE ALL SPACES IN A STRING WITH HYPHENS*/
+// let string1 = "this is a string";
+// function replace(string1){
+//     let result = '';
+//     for(let i=0; i<string1.length; i++){
+//         if(string1[i]===" "){
+//             result += '-' ;
+//         }
+//         else{
+//             result += string1[i];
+//         }
+//     }
+//     return result;
+// }
+// console.log(replace(string1));
+
+
+/*CONVERT A STRING TO TITLE CASE*/
+// let str = "this is a string";
+// function toCapitalCase(str) {
+//     let result = '';
+//     let capitalizeNext = true;
+//     for (let i = 0; i < str.length; i++) {
+//         let char = str[i];
+//         if (char === ' ') {
+//             capitalizeNext = true;
+//             result += char;
+//         } else if (capitalizeNext) {
+//             result += char.toUpperCase();
+//             capitalizeNext = false;
+//         } else {
+//             result += char.toLowerCase();
+//         }
+//     }
+//     return result;
+// }
+// console.log(toCapitalCase(str));
+
+
+/*CHECK IF A STRING CONTAINS ONLY DIGITS*/
+// let str = "123456";
+// function containsOnlyDigits(str) {
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] < '0' || str[i] > '9') {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+// console.log(containsOnlyDigits(str));
+
+
+/*REMOVE DUPLICATE CHARACTERS FROM A STRING*/
+// function removeDuplicates(str) {
+//     let result = "";
+//     for (let char of str) {
+//         if (!result.includes(char)) {
+//             result += char;
+//         }
+//     }
+//     return result;
+// }
+// console.log(removeDuplicates("programming"));
+
+
+/*FIND THE LONGEST WORD IN A STRING*/
+// let str = "The quick brown fox jumped over the lazy dog";
+// function longestWord(str) {
+//     let words = str.split(' ');
+//     let longest = '';
+//     for (let word of words) {
+//         if (word.length > longest.length) {
+//             longest = word;
+//         }
+//     }
+//     return longest;
+// }
+// console.log(longestWord(str));
+
+
+/*CAPITALIZE THE FIRST LETTER OF EACH WORD IN A STRING*/
+// let str = "this is a string";
+// function toCapitalCase(str) {
+//     let result = '';
+//     let capitalizeNext = true;
+//     for (let i = 0; i < str.length; i++) {
+//         let char = str[i];
+//         if (char === ' ') {
+//             capitalizeNext = true;
+//             result += char;
+//         } else if (capitalizeNext) {
+//             result += char.toUpperCase();
+//             capitalizeNext = false;
+//         } else {
+//             result += char.toLowerCase();
+//         }
+//     }
+//     return result;
+// }
+// console.log(toCapitalCase(str));
+
+
+/*REPEAT A STRING n TIMES*/
+// let str = "abc";
+// let num = 3;
+// function repeat(str) {
+//     for (let i = 0; i < num; i++) {
+//         console.log(str)
+//     }
+// }
+// repeat(str);
+
+
+/*CHECK IF A STRING CONTAINS A SUBSTRING*/
+// const mainString = "Hello, world!";
+// const subString = "world";
+// function containsSubstring(mainString, subString) {
+//     return mainString.includes(subString);
+// }
+// console.log(containsSubstring(mainString, subString));
+
+
+/*CONVERT A STRING TO AN ARRAY OF WORDS*/
+// let str = "this is a test";
+// function stringToWords(str) {
+//     return str.split(" ");
+// }
+// console.log(stringToWords(str));
+
+
+/*TRUNCATE A STRING*/
+// let str = "this is a long string";
+// let maxLength = 10;
+// function truncateString(str, maxLength) {
+//     if (str.length > maxLength) {
+//         return str.slice(0, maxLength - 3) + "...";
+//     }
+//     return str;
+// }
+// console.log(truncateString(str, maxLength));
+
+
+/*Check if a String Starts with a Specific Substring*/
+// function startsWith(str, substring) {
+//     return str.indexOf(substring) === 0;
+// }
+// console.log(startsWith("hello world", "hello"));
+// console.log(startsWith("hello world", "world"));
+
+/*Check if a String ends with a Specific Substring*/
+// function endsWith(str, substring) {
+//     return str.slice(-substring.length) === substring;
+// }
+// console.log(endsWith("hello world", "world"));
+// console.log(endsWith("hello world", "hello"));
+
+
+/*Insert a Substring at a Specific Position in a String*/
+// function insertSubstring(str, substring, position) {
+//     return str.slice(0, position) + substring + str.slice(position);
+// }
+// console.log(insertSubstring("Hello World", "Beautiful ", 6));
+
+
+/*Remove All Instances of a Substring*/
+// function removeSubstring(str, substring) {
+//     return str.split(substring).join("");
+// }
+// console.log(removeSubstring("This is a test. This is only a test.", "test"));
+
+
+
+
+
+/*######################################################################################################################################*/
+
+
+
+
+
+/*Sum All Elements in an Array*/
+// let arr = [1,2,3,4,5]
+// function sumArray(arr) {
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         sum += arr[i];
+//     }
+//     return sum;
+// }
+// console.log(sumArray(arr));
+
+
+/*Find the Largest Number in an Array*/
+// let arr = [1,5,3,9,2]
+// function findLargest(arr) {
+//     let largest = arr[0];
+//     for (let i = 1; i < arr.length; i++) {
+//         if (arr[i] > largest) {
+//             largest = arr[i];
+//         }
+//     }
+//     return largest;
+// }
+// console.log(findLargest(arr));
+
+
+/*Find the Smallest Number in an Array*/
+// let arr = [1,5,3,9,2]
+// function findSmallest(arr) {
+//     let smallest = arr[0];
+//     for (let i = 1; i < arr.length; i++) {
+//         if (arr[i] < smallest) {
+//             smallest = arr[i];
+//         }
+//     }
+//     return smallest;
+// }
+// console.log(findSmallest(arr));
+
+
+/*Sort an Array in Ascending Order*/
+// let arr = [1, 3, 5, 2, 4]
+// function sortArray(arr) {
+//     let len = arr.length;
+//     for (let i = 0; i < len - 1; i++) {
+//         for (let j = 0; j < len - 1 - i; j++) {
+//             if (arr[j] > arr[j + 1]) {
+//                 let temp = arr[j];
+//                 arr[j] = arr[j + 1];
+//                 arr[j + 1] = temp;
+//             }
+//         }
+//     }
+//     console.log(arr);
+// }
+// sortArray(arr);
+
+
+/*SORT AN ARRAY IN DESCENDING ORDER*/
+// let arr = [1,3,5,2,4]
+// function sortArray(arr){
+//     let len = arr.length;
+//     for(let i=0; i<len-1; i++){
+//         for(let j=0; j<len-1-i; j++){
+//             if(arr[j] < arr[j+1]){
+//                 let temp = arr[j];
+//                 arr[j] = arr[j+1];
+//                 arr[j+1] = temp;
+//             }
+//         }
+//     }
+//     console.log(arr);
+// }
+// sortArray(arr);
+
+
+/*REVERSE AN ARRAY*/
+// let arr = [1,2,3,4,5];
+// function reverse(arr){
+//     let empty = [];
+//     let len = arr.length;
+//     for(let i= len-1; i>=0; i--){
+//         empty.push(arr[i]);
+//         //empty += arr[i]; this prints only numbers
+//     }
+//     console.log(empty);
+// }
+// reverse(arr);
+
+
+/*CHECK IF AN ARRAY CONTAINS A SPECIFIC ELEMENT*/
+// let arr = [1,2,3,4,5]
+// let element = 3;
+// function containsElement(arr, element) {
+//     return arr.includes(element);
+// }
+// console.log(containsElement(arr, element));
+
+
+/*FIND THE INDEX OF A SPECIFIC ELEMENT IN AN ARRAY*/
+// let arr = [1,2,3,4,5]
+// let element = 3; 
+// function findIndex(arr, element) {
+//     return arr.indexOf(element);
+// }
+// console.log(findIndex(arr, element));
+
+
+/*REMOVRE DUPLICATES FROM AN ARRAY*/
+// let arr = [1,2,2,3,4,4,5]
+// function removeDuplicates(arr) {
+//     let uniqueArray = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (!uniqueArray.includes(arr[i])) {
+//             uniqueArray.push(arr[i]);
+//         }
+//     }
+//     console.log(uniqueArray);
+// }
+// removeDuplicates(arr);
+
+
+/*MERGE TWO ARRAYS*/
+// let arr1 = [1,2,3]
+// let arr2= [4,5,6]
+// function merge(arr1, arr2){
+//     let arr3 = arr1.concat(arr2);
+//     console.log(arr3);
+// }
+// merge(arr1, arr2);
+
+
+/*FIND THE INTERSECTION OF TWO ARRAYS*/
+// let arr1 = [1,2,3]
+// let arr2 = [2,3,4]
+// function intersection(arr1, arr2){
+//     let newarr = [];
+//     for(let i=0; i<arr1.length; i++){
+//         for(let j=0; j<arr2.length; j++){
+//             if(arr1[i]==arr2[j]){
+//                 newarr.push(arr1[i]);
+//             }
+//         }
+//     }
+//     console.log(newarr);
+// }
+// intersection(arr1, arr2);
+
+
+/*FIND THE UNION OF TWO ARRAYS*/
+// let arr1 = [1,2,3]
+// let arr2 = [2,3,4]
+// function union(arr1, arr2){
+//     const unionSet = new Set([...arr1, ...arr2]);
+//     return Array.from(unionSet);
+// }
+// console.log(union(arr1, arr2));
+
+
+/*CHECK IF AN ARRAY IS SORTED*/
+// let arr = [1, 2, 3, 4, 5]
+// function sort(arr) {
+//     let newarr = []
+//     for (let i = 0; i < arr.length-1; i++) {
+//             if (arr[i] < arr[i+1]) {
+//                 return true;
+//             }
+//     }
+//     return false;
+// }
+// console.log(sort(arr));
+
+
+/*FIND THE DIFFERENCE OF TWO ARRAYS*/
+// let arr1 = [1, 2, 3]
+// let arr2 = [2, 3, 4]
+// function difference(arr1, arr2) {
+//     let diff = []
+//     for (let i = 0; i < arr1.length; i++) {
+//         for (let j = 0; j < arr2.length; j++) {
+//             temp = arr1[i] - arr2[j];
+//             if (temp > 0) {
+//                 diff.push(temp);
+//             }
+//         }
+//     }
+//     console.log(diff)
+// }
+// difference(arr1, arr2);
+
+
+/*ROTATE AN ARRAY BY K POSITIONS*/
+// function rotateArray(arr, k) {
+//     const n = arr.length;
+//     k = k % n;
+//     return arr.slice(-k).concat(arr.slice(0, n - k));
+// }
+// console.log(rotateArray([1, 2, 3, 4, 5], 2));
+
+
+/*FIND THE MAXIMUM DIFFERENCE BETWEEN ANY TWO ELEMENTS IN AN ARRAY*/
+
+
+/*FIND THE SECOND LARGEST ELEMENT IN AN ARRAY*/
+// let array = [1,2,3,4,5]
+// function secondLargest(array) {
+//     let largest = -Infinity;
+//     let secondLargest = -Infinity;
+
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] > largest) {
+//             secondLargest = largest;
+//             largest = array[i];
+//         } else if (array[i] > secondLargest && array[i] < largest) {
+//             secondLargest = array[i];
+//         }
+//     }
+//     return secondLargest;
+// }
+// console.log(secondLargest(array));
+
+
+/*FIND THE PAIR OF ELEMENTS WITH MAXIMUM SUM IN AN ARRAY*/
+// let arr = [1,2,3,4,5]
+// function maxSumPair(arr) {
+//     const sortedArr = arr.slice().sort((a, b) => b - a);
+//     return sortedArr.slice(0, 2);
+// }
+// console.log(maxSumPair(arr));
+
+
+/*FIND THE PAIR OF ELEMENTS WITH MINIMUM SUM IN AN ARRAY*/
+// let arr = [1,2,3,4,5]
+// function minSumPair(arr) {
+//     const sortedArr = arr.slice().sort((a, b) => a - b);
+//     return sortedArr.slice(0, 2);
+// }
+// console.log(minSumPair(arr));
+
+
+/*MOVE ALL ZEROS TO THE END OF ARRAY*/
+// let arr = [0,1,0,3,12]
+// function moveZeros(arr) {
+//     const nonZeroElements = arr.filter(element => element !== 0);
+//     const zeroCount = arr.length - nonZeroElements.length;
+//     return nonZeroElements.concat(Array(zeroCount).fill(0));
+// }
+// console.log(moveZeros(arr));
+
+
+/*COUNT THE FREQUENCY OF EACH ELEMENT IN AN ARRAY */
+// let arr = [1, 2, 2, 3, 3, 3]
+// function countFrequency(arr) {
+//     const frequency = {};
+//     arr.forEach(element => {
+//         if (frequency[element]) {
+//             frequency[element]++;
+//         } else {
+//             frequency[element] = 1;
+//         }
+//     }
+//     );
+//     return frequency;
+// }
+// console.log(countFrequency(arr));
+
+
+/*FIND THE MOST FREQUENT ELEMENT IN AN ARRAY*/
+// let arr = [1,2,2,3,3,3]
+// function mostFrequent(arr) {
+//     const frequency = {};
+//     let maxElement = null;
+//     let maxCount = 0;
+//     arr.forEach(element => {
+//         if (frequency[element]) {
+//             frequency[element]++;
+//         } else {
+//             frequency[element] = 1;
+//         }
+//         if (frequency[element] > maxCount) {
+//             maxCount = frequency[element];
+//             maxElement = element;
+//         }
+//     });
+//     return maxElement;
+// }
+// console.log(mostFrequent(arr));
+
+
+/*FIND THE LONGEST INCREASING SUBSEQUENCE IN AN ARRAY*/
+// let arr = [10, 22, 9, 33, 21, 50, 41, 60, 80]
+// function longestIncreasingSubsequence(arr) {
+//     if (arr.length === 0) return [];
+//     const n = arr.length;
+//     const dp = Array(n).fill(1);
+//     const prev = Array(n).fill(-1);
+//     for (let i = 1; i < n; i++) {
+//         for (let j = 0; j < i; j++) {
+//             if (arr[i] > arr[j] && dp[i] < dp[j] + 1) {
+//                 dp[i] = dp[j] + 1;
+//                 prev[i] = j;
+//             }
+//         }
+//     }
+//     let maxIndex = 0;
+//     for (let i = 1; i < n; i++) {
+//         if (dp[i] > dp[maxIndex]) {
+//             maxIndex = i;
+//         }
+//     }
+//     const lis = [];
+//     while (maxIndex !== -1) {
+//         lis.push(arr[maxIndex]);
+//         maxIndex = prev[maxIndex];
+//     }
+//     return lis.reverse();
+// }
+// console.log(longestIncreasingSubsequence(arr));
+
+
+/*FIND THE LONGEST CONSECUTIVE SEQUENCE IN AN ARRAY*/
+// let arr = [100, 4, 200, 1, 3, 2]
+// function longestConsecutive(arr) {
+//     if (arr.length === 0) return 0;
+//     const numSet = new Set(arr);
+//     let longestStreak = 0;
+//     for (const num of numSet) {
+//         if (!numSet.has(num - 1)) {
+//             let currentNum = num;
+//             let currentStreak = 1;
+//             while (numSet.has(currentNum + 1)) {
+//                 currentNum++;
+//                 currentStreak++;
+//             }
+//             longestStreak = Math.max(longestStreak, currentStreak);
+//         }
+//     }
+//     return longestStreak;
+// }
+// console.log(longestConsecutive(arr));
+
+
+
+
+
+/*######################################################################################################################################*/
+
+
+
+
+/*CREATE A SIMPLE OBJECT*/
+// let person = {name:"John", age:25, city:"New York"};
+// console.log(person);
+
+
+/*ACCESS OBJECT PROPERTIES*/
+// let person = {name:"John Doe", age:25, city:"New York"};
+// function obj(){
+//     console.log(person.name);
+// }
+// obj();
+
+
+/*ADD A NEW PROPERTY TO AN OBJECT*/
+// let car = {brand:"Toyota", model:'corolla'};
+// function addproperty(){
+//     car.year = 2020;
+// }
+// addproperty();
+// console.log(car);
+
+
+/*DELETE A PROPERTY FROM AN OBJECT*/
+// let person = {name:"John", age:20, city:"New York", password:12345};
+// function delproperty(){
+//     delete person.password;
+// }
+// delproperty();
+// console.log(person);
+
+
+/*CHECK IF A OBJECT HAS A PROPERTY*/
+// let person = {name:"John", age:20, city:"New York"};
+// function checkproperty(){
+//     if(person.age!=undefined){
+//         console.log("true")
+//     }
+//     else{
+//         console.log("false")
+//     }
+// }
+// checkproperty();
+
+
+/*MERGE TWO OBJECTS*/
+// let person1 = {name:"John", age:20, city:"new york"};
+// let person2 = {password:12345, gender:"male"};
+// function mergeobjects(){
+//     let people = {...person1, ...person2};
+//     console.log(people);
+// }
+// mergeobjects();
+
+
+/*CLONE A OBJECT*/
+// const original = { name: 'Alice', details: { age: 30, city: 'NYC' } };
+// const clone = cloneObject(original);
+// clone.details.city = 'LA';
+// function cloneObject(original) {
+//     if (original === null || typeof original !== 'object') {
+//         return original;
+//     }
+//     let clone = Array.isArray(original) ? [] : {};
+//     for (let key in original) {
+//         if (original.hasOwnProperty(key)) {
+//             clone[key] = cloneObject(original[key]);
+//         }
+//     }
+//     return clone;
+// }
+// cloneObject();
+// console.log(original.details.city);
+// console.log(clone.details.city);
+
+
+/*LOOP THROUGH OBJECT PROPERTIES */
+// const user = { name: 'John', age: 30, city: 'New York' };
+// function printProperties(obj) {
+//     for (let key in obj) {
+//         if (obj.hasOwnProperty(key)) {
+//             console.log(`${key}: ${obj[key]}`);
+//         }
+//     }
+// }
+// printProperties(user);
+
+
+/*COUNT THE NUMBER OF PROPERTIES IN AN OBJECT */
+// const obj = { name: 'Alice', age: 30, city: 'NYC' };
+// function countProperties(obj) {
+//     return Object.keys(obj).length;
+// }
+// console.log(countProperties(obj));
+
+
+/*CONVERT OBJECT TO ARRAYS OF KEYS */
+// const obj = { name: 'Alice', age: 30, city: 'NYC' };
+// function objectKeysToArray(obj) {
+//     return Object.keys(obj);
+// }
+// console.log(objectKeysToArray(obj));
+
+
+/*CONVERT OBJECT TO ARRAYS OF VALUES */
+// const obj = { name: 'Alice', age: 30, city: 'NYC' };
+// function objectKeysToArray(obj) {
+//     return Object.values(obj);
+// }
+// console.log(objectKeysToArray(obj));
+
+
+/*CONVERT AN ARRAY OF OBJECTS TO A SINGLE OBJECT */
+// const arr = [{ key: 'a', value: 1 }, { key: 'b', value: 2 }];
+// function arrayToObject(arr) {
+//     return arr.reduce((acc, obj) => {
+//         acc[obj.key] = obj.value;
+//         return acc;
+//     }, {});
+// }
+// console.log(arrayToObject(arr));
+
+
+/*GROUP OBJECTS BY A PROPERTY*/
+// const users = [
+//     { name: 'Alice', age: 30 },
+//     { name: 'Bob', age: 20 },
+//     { name: 'Charlie', age: 30 }
+// ];
+// function groupBy(arr, property) {
+//     return arr.reduce((acc, obj) => {
+//         const key = obj[property];
+//         if (!acc[key]) {
+//             acc[key] = [];
+//         }
+//         acc[key].push(obj);
+//         return acc;
+//     }, {});
+// }
+// console.log(groupBy(users, 'age'));
+
+
+/*FIND THE OBJECT WITH THE MAXIMUM VALUE OF A PROPERTY */
+// const users = [
+//     { name: 'Alice', age: 30 },
+//     { name: 'Bob', age: 20 },
+//     { name: 'Charlie', age: 35 }
+// ];function findMax(arr, property) {
+//     return arr.reduce((maxObj, currentObj) => {
+//         if (currentObj[property] > (maxObj[property] || -Infinity)) {
+//             return currentObj;
+//         }
+//         return maxObj;
+//     }, {});
+// }
+// console.log(findMax(users, 'age'));
+
+
+/*SUM THE VALUES OF A SPECIFIC PROPERTY IN AN ARRAY OF OBJECTS */
+// const items = [
+//     { name: 'item1', price: 10 },
+//     { name: 'item2', price: 15 },
+//     { name: 'item3', price: 20 }
+// ];
+// function sumProperty(arr, property) {
+//     return arr.reduce((sum, obj) => {
+//         return sum + (obj[property] || 0);
+//     }, 0);
+// }
+// console.log(sumProperty(items, 'price'));
